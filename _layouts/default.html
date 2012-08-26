@@ -13,9 +13,8 @@
         <meta name="description" content="Perhekoti Hokkanen aloitti toimintansa 1.6.2012 Rovaniemellä. Perhekoti on kuusipaikkainen kristillisiä arvoja kunnioittava ammatillinen perhekoti.Tärkeää on lasten hyvinvointi, hyvä arki ja yhteistyö niin vanhempiin kuin kaikkiin yhteistyötahoihinkin.">
 
         <meta name="viewport" content="width=device-width">
-        <link href="/themes/perhekotihokkanenfi/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <!--[if lt IE 9]>
         <script>
             document.createElement('header');
@@ -66,9 +65,16 @@
             </footer>
         </div>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        {% if page.javascript %}
+        {% for js in page.javascript %}
+        <script src="/javascripts/{{ js }}"></script>
+        {% endfor %}
+        {% endif %}
+        <script src="/javascripts/site.js"></script>
         <script>
-            var _gaq=[ ['_setAccount','UA-33852684-1'],['_setDomainName', 'www.perhekotihokkanen.fi'],['_trackPageview'] ];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+            //var _gaq=[ ['_setAccount','UA-33852684-1'],['_setDomainName', 'www.perhekotihokkanen.fi'],['_trackPageview'] ];
+            //(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
 </html>

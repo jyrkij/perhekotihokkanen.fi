@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="gallery">
+    <div id="slideshow"></div>
+    <div id="thumbs">
+        <ul class="thumbs">
+            {% for item in page.gallery %}
+            <li>
+                <a class="thumb" href="{{ item }}">
+                    <img src="{{ item }}" alt="">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

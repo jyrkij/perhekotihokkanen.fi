@@ -3,6 +3,12 @@ name: Perhekoti Hokkanen oy
 menu:
     - text: Etusivu
       url: index.html
+    - text: Kuvia
+      url: kuvia.html
     - text: Riitta ja Reijo
       url: riitta-ja-reijo.html
+    - text: Arvot
+      url: arvot.html
+    - text: Yhteystiedot
+      url: yhteystiedot.html
 exclude: sass, config.rb, Procfile
