@@ -5,3 +5,4 @@ menu:
       url: index.html
     - text: Riitta ja Reijo
       url: riitta-ja-reijo.html
+exclude: sass, config.rb, Procfile
