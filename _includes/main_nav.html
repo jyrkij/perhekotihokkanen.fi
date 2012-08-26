@@ -1,0 +1,11 @@
+<ul>
+    {% for menu_item in site.menu %}
+        {% assign current = nil %}
+        {% if page.url == menu_item.url %}
+            {% assign current = 'current' %}
+        {% endif %}
+        <li{% if current %} class="{{ current }}"{% endif %}>
+            <a href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+        </li>
+    {% endfor %}
+</ul>

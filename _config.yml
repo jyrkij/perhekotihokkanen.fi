@@ -1,0 +1,7 @@
+url: http://www.perhekotihokkanen.fi/
+name: Perhekoti Hokkanen oy
+menu:
+    - text: Etusivu
+      url: index.html
+    - text: Riitta ja Reijo
+      url: riitta-ja-reijo.html
