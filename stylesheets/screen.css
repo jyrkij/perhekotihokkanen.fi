@@ -1,0 +1,376 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 61, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
+}
+
+/* line 64, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 1em;
+}
+
+@font-face {
+  font-family: 'Harabara';
+  src: url("/fonts/harabara.eot");
+  src: url("/fonts/harabara.eot?#iefix") format("embedded-opentype"), url("/fonts/harabara.woff") format("woff"), url("/fonts/harabara.ttf") format("truetype"), url("/fonts/harabara.svg#Harabara") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 38, ../sass/screen.scss */
+.clearfixed, #Container, #InnerContainer, .lt-ie8 #Container nav {
+  *zoom: 1;
+}
+/* line 38, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfixed:after, #Container:after, #InnerContainer:after, .lt-ie8 #Container nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 43, ../sass/screen.scss */
+.typography p, #InnerContainer div[role="main"] p {
+  font-size: 0.92857em;
+  line-height: 1.50769em;
+  padding: 0 0 7px;
+}
+/* line 48, ../sass/screen.scss */
+.typography h1, #InnerContainer div[role="main"] h1 {
+  font-size: 1.71429em;
+  line-height: 1.16667em;
+  font-family: "Harabara";
+  letter-spacing: 1px;
+  color: #d56d35;
+}
+/* line 55, ../sass/screen.scss */
+.typography h2, #InnerContainer div[role="main"] h2 {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+}
+/* line 60, ../sass/screen.scss */
+.typography h3, #InnerContainer div[role="main"] h3 {
+  font-size: 1em;
+  line-height: 2em;
+}
+/* line 64, ../sass/screen.scss */
+.typography strong, #InnerContainer div[role="main"] strong {
+  font-weight: bold;
+}
+/* line 68, ../sass/screen.scss */
+.typography em, #InnerContainer div[role="main"] em {
+  font-style: italic;
+}
+
+/* line 73, ../sass/screen.scss */
+body {
+  background: #455630 url("../images/bg.jpg") no-repeat center top;
+  color: #402d0b;
+  font-family: sans-serif;
+}
+
+/* line 79, ../sass/screen.scss */
+#Container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-box-shadow: black 0 0 10px;
+  -moz-box-shadow: black 0 0 10px;
+  box-shadow: black 0 0 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background: #fcfcfa;
+  color: #402d0b;
+}
+/* line 89, ../sass/screen.scss */
+#Container > header {
+  position: relative;
+  z-index: 1;
+}
+/* line 93, ../sass/screen.scss */
+#Container > header h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  position: relative;
+  display: inline-block;
+  top: 26px;
+  left: 20px;
+  z-index: 2;
+}
+/* line 103, ../sass/screen.scss */
+#Container > header a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  background: url("../images/logo.png") no-repeat left top;
+  height: 111px;
+  width: 235px;
+}
+/* line 111, ../sass/screen.scss */
+#Container > header img {
+  position: relative;
+  top: -65px;
+  float: left;
+  margin-bottom: -93px;
+  border-bottom: 28px solid #fcb32f;
+  z-index: 1;
+}
+/* line 121, ../sass/screen.scss */
+#Container > nav {
+  -webkit-transform: rotate(-8.8deg);
+  -moz-transform: rotate(-8.8deg);
+  -ms-transform: rotate(-8.8deg);
+  -o-transform: rotate(-8.8deg);
+  transform: rotate(-8.8deg);
+  text-align: center;
+  position: relative;
+  top: -315px;
+  float: right;
+  z-index: 2;
+}
+/* line 129, ../sass/screen.scss */
+#Container > nav li {
+  display: inline-block;
+}
+/* line 136, ../sass/screen.scss */
+#Container > nav a {
+  font-size: 2em;
+  line-height: 1em;
+  display: block;
+  padding: 0 10px;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #d56d35;
+  font-family: "Harabara";
+  letter-spacing: 1px;
+}
+/* line 148, ../sass/screen.scss */
+#Container > footer {
+  font-size: 1.28571em;
+  line-height: 0.77778em;
+  padding: 25px 70px;
+  color: #402d0b;
+  background: #fcb32f;
+  text-align: center;
+}
+
+/* line 157, ../sass/screen.scss */
+#InnerContainer {
+  position: relative;
+}
+/* line 161, ../sass/screen.scss */
+#InnerContainer .content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #InnerContainer .content {
+  overflow-x: hidden;
+}
+/* line 165, ../sass/screen.scss */
+#InnerContainer div[role="main"] {
+  padding: 1em 20px;
+}
+
+/* line 171, ../sass/screen.scss */
+::-moz-selection {
+  background: #fcb32f;
+  color: #455630;
+  text-shadow: none;
+}
+
+/* line 177, ../sass/screen.scss */
+::selection {
+  background: #fcb32f;
+  color: #455630;
+  text-shadow: none;
+}
+
+/**
+ * Gallery
+ */
+/* line 187, ../sass/screen.scss */
+div.gallery div#slideshow {
+  text-align: center;
+}
+/* line 190, ../sass/screen.scss */
+div.gallery div#slideshow a {
+  text-decoration: none;
+}
+/* line 196, ../sass/screen.scss */
+div.gallery div#thumbs ul.thumbs {
+  text-align: center;
+  margin-top: 25px;
+}
+/* line 200, ../sass/screen.scss */
+div.gallery div#thumbs ul.thumbs li {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  display: inline-block;
+  border: 1px solid gray;
+  padding: 5px 8px;
+  margin: 0 8px 8px;
+}
+/* line 207, ../sass/screen.scss */
+div.gallery div#thumbs ul.thumbs li:hover, div.gallery div#thumbs ul.thumbs li.selected {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 211, ../sass/screen.scss */
+div.gallery div#thumbs ul.thumbs li a {
+  display: inline-block;
+  height: 110px;
+  overflow: hidden;
+}
+/* line 215, ../sass/screen.scss */
+div.gallery div#thumbs ul.thumbs li a img {
+  width: 165px;
+}
+/* line 223, ../sass/screen.scss */
+div.gallery div#thumbs div.pagination a, div.gallery div#thumbs div.pagination span.current {
+  display: none;
+}
+/* line 227, ../sass/screen.scss */
+div.gallery div#thumbs div.pagination a[title="<"], div.gallery div#thumbs div.pagination a[title=">"] {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  position: relative;
+  border: none;
+  background: url("../images/arrow-prev.png") no-repeat top left;
+  height: 60px;
+  width: 24px;
+  margin-top: -105px;
+}
+/* line 238, ../sass/screen.scss */
+div.gallery div#thumbs div.pagination a[title="<"] {
+  float: left;
+  left: 10px;
+}
+/* line 243, ../sass/screen.scss */
+div.gallery div#thumbs div.pagination a[title=">"] {
+  background-image: url("../images/arrow-next.png");
+  float: right;
+}
+
+/* line 254, ../sass/screen.scss */
+.lt-ie9 #Container header img {
+  border-width: 50px;
+}
+/* line 258, ../sass/screen.scss */
+.lt-ie9 #Container nav {
+  top: -10px;
+  float: none;
+}
+/* line 262, ../sass/screen.scss */
+.lt-ie9 #Container nav a {
+  color: #000000;
+}
+
+/* line 274, ../sass/screen.scss */
+.lt-ie8 #Container nav li {
+  display: block;
+  float: left;
+}
+
+/**
+ * Oldie styles
+ */
+/*
+.oldie {
+    .header.main #site-name {
+        display: block;
+        width: 800px;
+        margin: 0 -20px;
+        padding: .1em 10px .2em 30px;
+    }
+    #sidebar-first {
+        margin-top: 0.6em;
+    }
+    .footer.main {
+        padding: 10px;
+    }
+    p img {
+        float: left;
+    }
+}
+*/
