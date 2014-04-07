@@ -13,3 +13,6 @@ menu:
 - text: Yhteystiedot
   url: yhteystiedot.html
 exclude: sass, config.rb, Procfile, Thumbs.db
+markdown: kramdown
+prose:
+    media: images
