@@ -10,7 +10,7 @@ Linnuntie 26
 
 p. 044-265 7720
 
-perhekotihokkanen@pp.inet.fi
+riitta-maija.hokkanen@perhekotihokkanen.fi
 
 Toimitusjohtaja Riitta-Maija Hokkanen  
 Hallituksen puheenjohtaja Reijo Hokkanen
