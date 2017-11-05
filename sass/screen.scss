@@ -146,7 +146,7 @@ body {
     }
 
     &>footer {
-        @include adjust-font-size-to(18px, 1);
+        @include adjust-font-size-to(18px, 2);
         padding: 25px 70px;
         color: #402d0b;
         background: #fcb32f;
@@ -190,6 +190,10 @@ div.gallery {
         a {
             text-decoration: none;
         }
+
+        img {
+          max-width: 100%;
+        }
     }
 
     div#thumbs {
@@ -203,18 +207,19 @@ div.gallery {
                 border: 1px solid gray;
                 padding: 5px 8px;
                 margin: 0 8px 8px;
+                transition: .5s ease-out .25s;
 
                 &:hover, &.selected {
                     @include opacity(1);
+                    transition: .5s ease-in 0s;
                 }
 
                 a {
                     display: inline-block;
-                    height: 110px;
-                    overflow: hidden;
-                    img {
-                        width: 165px;
-                    }
+                    width: 100px;
+                    height: 0;
+                    padding-bottom: percentage(9 / 16);
+                    background-size: cover;
                 }
             }
         }
@@ -232,7 +237,7 @@ div.gallery {
                 background: url("../images/arrow-prev.png") no-repeat top left;
                 height: 60px;
                 width: 24px;
-                margin-top: -105px;
+                margin-top: -75px;
             }
 
             a[title="<"] {

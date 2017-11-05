@@ -2,7 +2,7 @@ $(function() {
     if ($.fn.galleriffic) {
         var gallery = $('#thumbs').galleriffic({
             delay:                     3000, // in milliseconds
-            numThumbs:                 4, // The number of thumbnails to show page
+            numThumbs:                 6, // The number of thumbnails to show page
             preloadAhead:              10, // Set to -1 to preload all images
             enableTopPager:            false,
             enableBottomPager:         true,

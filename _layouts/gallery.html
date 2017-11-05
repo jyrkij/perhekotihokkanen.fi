@@ -8,9 +8,7 @@ layout: default
         <ul class="thumbs">
             {% for item in page.gallery %}
             <li>
-                <a class="thumb" href="{{ item }}">
-                    <img src="{{ item }}" alt="">
-                </a>
+                <a class="thumb" href="{{ item }}" style="background-image: url('{{ item }}')"></a>
             </li>
             {% endfor %}
         </ul>
