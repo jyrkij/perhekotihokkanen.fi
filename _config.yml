@@ -12,7 +12,13 @@ menu:
   url: /arvot.html
 - text: Yhteystiedot
   url: /yhteystiedot.html
-exclude: sass, config.rb, Procfile, Thumbs.db
+exclude:
+  - sass
+  - config.rb
+  - Procfile
+  - Thumbs.db
+  - Gemfile
+  - CNAME
 markdown: kramdown
 prose:
     media: images
